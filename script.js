@@ -1,19 +1,27 @@
-var name = 'Сергей';
-if (name == 'Сергей') {
-  console.log('да');
+// first task
+
+const string = 'Привет! Как дела?';
+
+const vowelsGroup = ["а", "е", "ё", "и", "о", "у", "ы", "ю", "я","э"];
+
+
+const getVowels = function(filterString) {
+
+  let vowels = "";
+
+  for (let i = 0; i < filterString.length; i++) {
+    const letter = filterString[i].toLowerCase();
+
+    // if(vowelsGroup.indexOf(letter) != -1) 
+    if(vowelsGroup.includes(letter)) {
+      vowels = vowels + letter;
+    }
+
+  }
+
+
+  return vowels;
 }
 
-for (
-  var i = 0;
-  i < 3;
-  i++
-) {
-  console.log(i);
-}
 
-function sum(d, h) {
-  var result = d - h;
-  return result;
-}
-
-
+console.log(getVowels(string));

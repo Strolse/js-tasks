@@ -1,0 +1,65 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  position: relative;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgb(222, 184, 135, .2);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 10000;
+}
+
+.modal-container{
+  position: relative;
+
+}
+
+.content {
+  background: chocolate;
+  padding: 20px;
+  color: beige;
+  font-size: 30px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: cornflowerblue;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: beige;
+  border: none;
+  font-size: 20px;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: brown;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+  font-size: 25px;
+  color: beige;
+}

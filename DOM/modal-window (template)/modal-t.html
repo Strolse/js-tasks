@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="./modal-t.css">
+</head>
+<body>
+  <div class="container">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatem magni pariatur iure laudantium praesentium rem assumenda ut quam molestias aperiam vel velit quo quod repellat nihil aliquid dolorum dolores!
+    </p>
+    <button class="button" id="openOverlay">Открыть</button>
+  </div>
+
+  <script type="html/template" id="overlayTemplate">
+    <div class="modal-container">
+      <a href="#" class="close">x</a>
+      <div class="content"></div>
+    </div>
+  </script>
+  <script src="./modal-t.js"></script>
+</body>
+</html>
